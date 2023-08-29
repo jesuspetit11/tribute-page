@@ -1,0 +1,135 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*Header*/
+
+div.encabezado{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+    background-color: #84754e;
+}
+h1#title{
+    font-family: 'IM Fell English SC', serif;
+    font-size: 5em;
+    text-align: center;
+}
+p.shortitle{
+    font-family: 'IM Fell English SC', serif;
+    font-size: 2em;
+}
+
+/*Content*/
+
+/*imagen y quote*/
+div.tarjeta{
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #a6192e;
+
+}
+img{
+    max-width: 100%;
+    height: auto;
+    border: solid 2px #decba5;
+    padding: 1.2rem;
+    border-radius: 20px;
+}
+h2{
+    font-style: italic;
+    font-size: 1.5rem;
+    text-align: center;
+    padding:1rem;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+}
+/* cronología*/
+
+div.logros{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1rem;
+    background-color: #a6192e;
+}
+
+p.titulo{
+    font-family:'IM Fell English SC', serif;
+    font-size: 3rem;
+    padding: 1rem;
+}
+ul{
+    border: solid 2px hsla(250, 150, 50, 1);
+    padding: 2em;
+    text-align: justify;
+    border-radius: 20px;
+    background-color: #84754e;;
+    line-height:200%;
+    font-family: 'Times New Roman', Times, serif;
+    width: 60rem;
+    font-size: 1.2rem;
+}
+div.enlace{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    font-size: 1.2rem;
+    background-color:#a6192e;
+    font-size: 2rem;
+}
+a{  
+    text-decoration: none;
+    color: black; 
+}
+a:hover{
+    text-shadow: 0px 0px 20px hsla(134, 100%, 50%, 1),0px 0px 5px hsla(134, 100%, 50%, 1);
+}
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    background-color: #84754e;;
+}
+/* autoria*/
+footer{
+    font-size: 2rem;
+    font-style: italic;
+}
+/* responsive*/
+div.grid{
+    display: grid;
+    grid-template-areas:
+    "header"
+    "main"
+    "footer";
+}
+header{
+    grid-area:header
+}
+main{
+    grid-area: main;
+}
+footer{
+    grid-area: footer;
+}
+@media(min-width:500px){
+    div.grid{
+        grid-template-areas:
+        "header"
+        "main"
+        "footer";
+    }
+}
